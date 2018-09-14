@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <link rel="icon" href="../../favicon.ico">
+
+  <title>Papiro 2018</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Custom styles for this template -->
+  <link href="css/narrow-jumbotron.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/xandocs.css" type="text/css" />
+  <script language=javascript type="text/javascript">
+  monName = new Array ("janeiro", "fevereiro", "março", "abril", "maio", "junho","julho", "agosto", "setembro","outubro", "novembro", "dezembro");
+  now = new Date;
+  </script>
+  <script src='js/tinymce/js/tinymce/tinymce.min.js'></script>
+  <script>
+  tinymce.init({
+    selector: '.editavel',
+    inline:true
+  });
+  </script>
+</head>
+
+<body>
+
+  <div class="container">
+
+    <!-- Formulário -->
+    <div class="noprint">
+      <!-- Example single danger button -->
+      <div class="btn-group">
+        <a class="btn btn-primary" href="certidao.html">Limpar</a>
+        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Conciliador
+        </button>
+        <div class="dropdown-menu">
+          <a id="aiesca" class="dropdown-item" href="#">Aiesca</a>
+          <a id="erica" class="dropdown-item" href="#">Erica</a>
+          <a id="murilo" class="dropdown-item" href="#">Murilo</a>
+        </div>
+        <button id="bt_imprimir" type="submit" class="btn btn-primary">Imprimir</button>
+      </div>
+
+      <form class="form-inline">
+        <label class="sr-only" for="inlineFormInputGroup">Processo</label>
+        <div class="input-group mb-2 mr-sm-2 mb-sm-0">
+          <div class="input-group-addon">Processo</div>
+          <input id="inp_proc" type="text" class="form-control" id="inlineFormInputGroup" placeholder="XXXXXXXXXXX.8.05.0113">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">Nome</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">Nome</div>
+          <input id="inp_parte" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome da Parte">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">CPF</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">CPF</div>
+          <input id="inp_cpf" type="text" class="form-control" id="inlineFormInputGroup" placeholder="CPF">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">Hora</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">Hora</div>
+          <input id="inp_hora" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Hora">
+        </div>
+
+      </form>
+    </div>
+    <!-- Documento -->
+    <div class="row marketing">
+      <div class="col-lg-2 col-print-2">
+        <p class="text-center"><img src="img/poderJudiciarioLogo.jpg"></img></p>
+      </div>
+      <div class="col-lg-10 col-print-10 text-left">
+        <p id="unidadejudicial"></p>
+        </div>
+        <div class="col-lg-12 editavel">
+          <h3 id="processo">Processo: ______________________.8.05.0113</h3>
+          <h2 id="titulo" class="text-center">PETIÇÃO</h2>
+          <p id="teor" class="text-justify">...</p>
+          <script language=javascript type="text/javascript">
+          document.write ("<p class=\"text-center\"> Itabuna" + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
+          </script>
+          <p id="assinatura" class="text-center "></p>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p id="fim">&copy; Documento editado no software Papiro 2018</p>
+      </footer>
+
+
+    </div> <!-- /container -->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="js/popper.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+
+    <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+    <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+    <!-- Funcoes do Documento
+    ================================================== -->
+    <script src="js/unidade.js"></script>
+    <script src="js/certidao.js"></script>
+  </body>
+  </html>
