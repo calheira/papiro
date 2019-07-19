@@ -36,28 +36,7 @@
     <div class="noprint">
       <!-- Example single danger button -->
       <div class="btn-group">
-        <a class="btn btn-primary" href="peticao.html">Limpar</a>
-        <button type="button" class="btn btn-danger dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Pedidos
-        </button>
-
-        <div class="dropdown-menu">
-          <a id="alvara" class="dropdown-item" href="#">Alvará</a>
-          <a id="audienciai" class="dropdown-item" href="#">Audiência de Instrução</a>
-          <a id="endereco" class="dropdown-item" href="#">Atualizar Endereço</a>
-          <a id="certidao" class="dropdown-item" href="#">Certidão de Crédito</a>
-          <a id="contrarrazoes" class="dropdown-item" href="#">Contrarrazões</a>
-          <a id="execucao" class="dropdown-item" href="#">Execução - Bacenjud</a>
-          <a id="desarquivamento" class="dropdown-item" href="#">Desarquivamento</a>
-          <a id="desistencia" class="dropdown-item" href="#">Desistência</a>
-          <a id="isencao" class="dropdown-item" href="#">Isenção de Custas</a>
-          <a id="juntada" class="dropdown-item" href="#">Juntada de Documentos</a>
-          <a id="liminar" class="dropdown-item" href="#">Liminar</a>
-          <a id="prioridade" class="dropdown-item" href="#">Prioridade</a>
-          <a id="prosseguimento" class="dropdown-item" href="#">Prosseguimento</a>
-
-        </div>
-
+        <a class="btn btn-danger" href="certidao-comparecimento-advogado.html">Limpar</a>
         <button id="bt_imprimir" type="submit" class="btn btn-primary">Imprimir</button>
       </div>
 
@@ -68,10 +47,34 @@
           <input id="inp_proc" type="text" class="form-control" id="inlineFormInputGroup" placeholder="XXXXXXXXXXX.8.05.0113">
         </div>
 
-        <label class="sr-only" for="inlineFormInputGroup">Nome</label>
+        <label class="sr-only" for="inlineFormInputGroup">Hora</label>
         <div class="input-group mb-3 mr-sm-3 mb-sm-0">
-          <div class="input-group-addon">Nome</div>
-          <input id="inp_nome" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome da Parte">
+          <div class="input-group-addon">Hora</div>
+          <input id="inp_hora" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Hora">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">Preposto</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">Preposto</div>
+          <input id="inp_preposto" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome do Presposto">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">RG</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">RG</div>
+          <input id="inp_rg" type="text" class="form-control" id="inlineFormInputGroup" placeholder="RG">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">Nome Advogado</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">Nome Advogado</div>
+          <input id="inp_adv" type="text" class="form-control" id="inlineFormInputGroup" placeholder="Nome do Advogado">
+        </div>
+
+        <label class="sr-only" for="inlineFormInputGroup">OAB</label>
+        <div class="input-group mb-3 mr-sm-3 mb-sm-0">
+          <div class="input-group-addon">OAB</div>
+          <input id="inp_oab" type="text" class="form-control" id="inlineFormInputGroup" placeholder="OAB">
         </div>
 
       </form>
@@ -86,9 +89,8 @@
         </div>
         <div class="col-lg-12 editavel">
           <h3 id="processo">Processo: ______________________.8.05.0113</h3>
-          <h2 id="titulo" class="text-center">PETIÇÃO</h2>
+          <h2 id="titulo" class="text-center">CERTIDÃO</h2>
           <p id="teor" class="text-justify">...</p>
-          <p id="pedido" class="text-justify">...</p>
           <script language=javascript type="text/javascript">
           document.write ("<p class=\"text-center\"> Itabuna" + ", " + now.getDate () + " de " + monName [now.getMonth() ]   +  " de "  +     now.getFullYear () + ". </p>")
           </script>
@@ -116,6 +118,6 @@
     <!-- Funcoes do Documento
     ================================================== -->
     <script src="js/unidade.js"></script>
-    <script src="js/peticao.js"></script>
+    <script src="js/certidao-adv.js"></script>
   </body>
   </html>
