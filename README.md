@@ -1,6 +1,6 @@
 # papiro
 
-![papiro](img/papiro.png)
+[![papiro](img/papiro.png)](https://calheira.github.io/papiro/)
 
 Disponível em https://calheira.github.io/papiro/
 
