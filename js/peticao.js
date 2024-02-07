@@ -9,7 +9,7 @@ $(document).ready(function(){
 
   //inclui pedido de alvará
   $("#alvara").on("click", function(){
-    doc.pedidos += "<br>- SEJA EXPEDIDO ALVARÁ JUDICIAL através do Sistema SISCONDJ, referente ao valor depositado no evento ______, informando ainda seus DADOS BANCÁRIOS:<br>BANCO ______________, Agência:___________, Conta CorrentePoupança:______________, Titular: ____________, CPF:_______________ . "
+    doc.pedidos += "<br>- SEJA EXPEDIDO ALVARÁ JUDICIAL, referente ao valor depositado no evento ______, informando ainda seus DADOS BANCÁRIOS:<br>BANCO ______________,<br> Agência:___________,<br>Conta CorrentePoupança:______________,<br> Titular: ____________,<br>CPF:_______________ ou Chave PIX: ___________________________."
     $("#pedido").html(doc.pedidos);
   });
 
@@ -33,7 +33,7 @@ $(document).ready(function(){
 
   //inclui pedido de atualização de cálculo
   $("#execucao").on("click", function(){
-    doc.pedidos += "<br>- seja iniciada a EXECUÇÃO DA SENTENÇA / ACÓRDÃO, com o ENVIO DOS AUTOS À CONTADORIA para ATUALIZAÇÃO DOS CÁLCULOS. Requer, também, seja realizado o BLOQUEIO DO VALOR ATUALIZADO, através dos sistemas BACENJUD e / ou RENAJUD."
+    doc.pedidos += "<br>- seja iniciada a EXECUÇÃO DA SENTENÇA / ACÓRDÃO, com o ENVIO DOS AUTOS À CONTADORIA para ATUALIZAÇÃO DOS CÁLCULOS.<br> - Requeiro, também, seja realizado o BLOQUEIO DO VALOR ATUALIZADO, através dos sistemas BACENJUD e / ou RENAJUD.<br>- Em tempo, informo meus DADOS BANCÁRIOS para que SEJA EXPEDIDO ALVARÁ JUDICIAL:<br>BANCO ______________,<br> Agência:___________,<br>Conta CorrentePoupança:______________,<br> Titular: ____________,<br>CPF:_______________ ou CHAVE PIX: ________________________________________________."
     $("#pedido").html(doc.pedidos);
   });
 
