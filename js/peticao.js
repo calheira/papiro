@@ -19,6 +19,12 @@ $(document).ready(function(){
     $("#pedido").html(doc.pedidos);
   });
 
+  //audiencia presencial
+  $("#audienciap").on("click", function(){
+    doc.pedidos += "<br>- devido à suas dificuldades tecnológicas, SEJA A AUDIÊNCIA REALIZADA NA MODALIDADE PRESENCIAL. "
+    $("#pedido").html(doc.pedidos);
+  });
+
   //inclui pedido de certidao de credito
   $("#certidao").on("click", function(){
     doc.pedidos += "<br>- SEJA EXPEDIDA CERTIDÃO DE CRÉDITO em favor do exequente."
